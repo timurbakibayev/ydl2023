@@ -18,3 +18,4 @@ def test_simple_line():
     pm.fit(df, y)
     assert pm.score(df, y) == 0
     assert pm.predict(df) == y
+    assert pm.combination == [1, -1, -1]

@@ -39,3 +39,6 @@ class DataFrame:
         :return:
         """
         return self._columns
+
+    def len(self):
+        return self._from_dict[self._columns[0]].len

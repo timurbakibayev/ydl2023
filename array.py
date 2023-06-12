@@ -12,6 +12,10 @@ class Array:
             if type(v) != t:
                 raise TypeError("All values must be of the same type")
 
+    @classmethod
+    def zero(cls, length: int):
+        return cls([0] * length)
+
     @property
     def len(self):
         return len(self._values)

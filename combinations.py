@@ -30,4 +30,13 @@ def generate_combinations2(n):
 # print(t2/t1)
 #
 
-print(generate_combinations(3))
+# print(generate_combinations(3))
+
+
+for i, k in enumerate(["dddd", "aaaa", "qqwwqw"]):
+    print(i, k)
+
+i = 0
+for k in ["dddd", "aaaa", "qqwwqw"]:
+    print(i, k)
+    i += 1

@@ -18,6 +18,7 @@ class Vertex:
         self.edges = []
         self.id = random.randint(0, 10000)
         self.dist = None
+        self.prev = None
 
     def add_edge(self, edge: Edge):
         self.edges.append(edge)
@@ -25,21 +26,22 @@ class Vertex:
     def __str__(self):
         return f"Vertex {self.name} at ({self.x}, {self.y})"
 
+    def __lt__(self, other):
+        return self.dist < other.dist
+
 
 class Graph:
     def __init__(self):
         self.vertices = []
-        self.edges = []  # not used
 
     def add_vertex(self, vertex: Vertex):
         self.vertices.append(vertex)
 
     def add_edge(self, edge: Edge):
-        self.edges.append(edge)  # not used
         edge.start.add_edge(edge)
 
     def __str__(self):
-        return f"Graph with {len(self.vertices)} vertices and {len(self.edges)} edges"
+        return f"Graph with {len(self.vertices)} vertices"
 
     def __repr__(self):
         return self.__str__()

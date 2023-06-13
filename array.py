@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Array:
     ALLOWED_TYPES = [int, float]
 

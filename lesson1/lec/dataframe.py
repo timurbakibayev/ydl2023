@@ -1,4 +1,4 @@
-from array import Array
+from lesson1.lec.array import Array
 from typing import Dict
 
 

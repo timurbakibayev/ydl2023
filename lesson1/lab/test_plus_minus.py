@@ -1,14 +1,9 @@
-from dataframe import DataFrame
-from array import Array
-from plus_minus import PlusMinus
-import pytest
+from lesson1.lec.dataframe import DataFrame
+from lesson1.lec.array import Array
+from lesson1.lab.plus_minus import PlusMinus
 
 
 def test_simple_line():
-    """
-    guess: a = 7
-    :return:
-    """
     a = Array([1, 2, 3, 4, 5])  # +
     b = Array([2, 3, 4, 5, 6])  # -
     c = Array([1, 1, 1, 1, 1])  # -

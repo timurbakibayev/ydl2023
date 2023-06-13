@@ -2,10 +2,6 @@ from graph import Graph, Vertex, Edge
 
 
 def kazakhstan() -> Graph:
-    # Canvas is 500 x 500 pixels
-    # 0, 0 - top left
-    # 500, 500 - bottom right
-
     almaty = Vertex("Almaty", 350, 400)
     karagandy = Vertex("Karagandy", 100, 70)
     astana = Vertex("Astana", 50, 50)

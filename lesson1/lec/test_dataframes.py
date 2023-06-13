@@ -1,5 +1,5 @@
-from dataframe import DataFrame
-from array import Array
+from lesson1.lec.dataframe import DataFrame
+from lesson1.lec.array import Array
 
 
 def test_dataframe_init():

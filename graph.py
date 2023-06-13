@@ -17,6 +17,7 @@ class Vertex:
         self.y = y
         self.edges = []
         self.id = random.randint(0, 10000)
+        self.dist = None
 
     def add_edge(self, edge: Edge):
         self.edges.append(edge)

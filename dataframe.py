@@ -1,11 +1,12 @@
 from array import Array
+from typing import Dict
 
 
 class DataFrame:
     """
     Table of data with named columns
     """
-    def __init__(self, from_dict: dict[str, Array]):
+    def __init__(self, from_dict: Dict[str, Array]):
         self._from_dict = from_dict
         self._columns = list(from_dict.keys())
         for k, v in from_dict.items():

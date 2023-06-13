@@ -1,7 +1,9 @@
+from typing import List
+
 class Array:
     ALLOWED_TYPES = [int, float]
 
-    def __init__(self, values: list):
+    def __init__(self, values: List):
         self._values = values
         if len(values) == 0:
             return

@@ -1,6 +1,5 @@
-import pytest
-from graph import Graph, Vertex, Edge
-from dijkstra import dikstra
+from lesson2.lec.graph import Graph, Vertex, Edge
+from lesson2.lab.dijkstra import dijkstra
 
 
 def test_simple():
@@ -29,7 +28,7 @@ def test_simple():
     g.add_edge(balkhash_karagandy)
     g.add_edge(karagandy_astana)
 
-    dikstra(g, almaty)
+    dijkstra(g, almaty)
     assert almaty.dist == 0
     assert balkhash.dist == 500
     assert shymkent.dist == 750
@@ -69,7 +68,7 @@ def test_shorter():
     g.add_edge(balkhash_priozersk)
     g.add_edge(priozersk_shymkent)
 
-    path = dikstra(g, almaty, shymkent)
+    path = dijkstra(g, almaty, shymkent)
     assert almaty.dist == 0
     assert balkhash.dist == 500
     assert priozersk.dist == 530
@@ -78,5 +77,5 @@ def test_shorter():
     assert astana.dist == float('inf')
     assert path == [almaty, balkhash, priozersk, shymkent]
 
-    path = dikstra(g, shymkent, almaty)
+    path = dijkstra(g, shymkent, almaty)
     assert path is None

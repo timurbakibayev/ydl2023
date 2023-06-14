@@ -1,6 +1,7 @@
-from dataframe import DataFrame
-from array import Array
-from combinations import generate_combinations
+from lesson1.lec.dataframe import DataFrame
+from lesson1.lec.array import Array
+from lesson1.lab.combinations import generate_combinations
+
 """
 Model
 receives: X, y

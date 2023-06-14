@@ -60,6 +60,7 @@ def one_step(k):
                 if a[i][j + 1] == 0 and b[i][j+1] == 0:  # There is no wall to the right of us
                     b[i][j + 1] = k + 1
 
+
 for i in range(1, 100):
     one_step(i)
 
@@ -84,7 +85,5 @@ while b[current_i][current_j] > 1:
         break
     img.ellipse((current_j * w + 10, current_i * w + 10, current_j * w + w - 10, current_i * w + w - 10),
                 fill=(255, 0, 0), outline=(0, 0, 0))
-
-
 
 canvas.show()
